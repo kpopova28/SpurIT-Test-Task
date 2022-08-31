@@ -1,0 +1,214 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+/*Обнуление стандартных стилей*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+.arial{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.fontsize30{
+	font-size: 30px;
+}
+.italy{
+	font-style: italic;
+}
+.font700{
+	font-weight: 700;
+}
+.colorred{
+	color: #cd7f79;
+}
+.textright{
+	text-align: right;
+}
+.decor{
+	text-decoration: line-through;
+}
+.shadow{
+	text-shadow: 1px 1px 10px #000;
+}
+.trans{
+	text-transform: uppercase;
+}
+.ident{
+	text-indent: 50px;
+}
+.space{
+	letter-spacing: 5px;
+}
+.wordspace{
+	word-spacing: 10px;
+}
+.whitespace{
+	white-space: normal;
+}
+.line{
+	line-height: 20px;
+}
+/* задание*/
+html{
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: Arial;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #2F2F2F;
+}
+.week-products__body{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.week-products__title{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    padding: 40px 0px 40px;
+}
+.week-products__items-body{
+    display: flex;
+    justify-content: space-between;
+}
+.week-products__item{
+    width: 380px;
+    height: 481.72px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 10px rgb(217, 216, 216)
+}
+.week-products__item-image{
+    background-image: url(./img/Image.jpg);
+    height: 213.75px;
+    border-radius: 10px 10px 0px 0px;
+}
+.week-products__item-title{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 24px 24px 0px;
+}
+.week-products__item-description{
+    line-height: 24px;
+    padding: 16px 24px 0px;
+}
+.week-products__item-button{
+    width: 332px;
+    height: 48px;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    background-color: #fff;
+
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #42940F;
+
+    margin: 72px 24px 23.97px;
+}
+.week-products__item-button_long-descr{
+    margin-top: 24.25px;
+    margin-bottom: 23.75px;
+}
+.week-products__item-button_disabled{
+    width: 332px;
+    height: 48px;
+    border: 1px solid #4E4E4E;
+    border-radius: 8px;
+    background-color: #4E4E4E;
+
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    pointer-events:none;
+    margin: 72px 24px 23.72px;
+}
+.week-products__tags{
+    display: flex;
+    justify-content: space-around;
+    width: 263px;
+    height: 25.33px;
+    position: absolute;
+    margin: 16px 0 0 16px
+}
+.week-products__tag{
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #FDCFF3;
+    border-radius: 8px;
+    width: 110px;
+}
+.week-products__tag_last{
+    background: #FFCF56;
+    width: 134.41px;
+}
+
+@media (max-width: 768px) {
+    .week-products__items-body{
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .week-products__item{
+        margin: 0 0 20px;
+    }
+    .week-products__title{
+        font-size: 47px;
+    }
+ }
+ @media (max-width: 480px) {
+    .week-products__items-body{
+        max-width: 380px;
+    }
+    .week-products__title{
+        font-size: 35px;
+    }
+ }
